@@ -1,12 +1,45 @@
 <!DOCTYPE html>
-<html>
+<html xmlns="http://www.w3.org/1999/xhtml">
   <head>
-    <title>Page Title</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+    <title>Krastan Dimitrov's Personal Website</title>
+    <link rel="stylesheet" type="text/css" href="./fullpage.css" />
+    <style>
+      h1 {
+        text-align: center;
+      }
+    </style>
   </head>
   <body>
-    <h1>
-      Hello! I am Krastan. Checkout my
-      <a href="http://github.com/KrastanD">github</a>!
-    </h1>
+    <div id="fullpage">
+      <div class="section">
+        <h1>
+          Hello! I am Krastan. Checkout my
+          <a href="http://github.com/KrastanD">github</a>!
+        </h1>
+      </div>
+      <div class="section"><h1>About Me</h1></div>
+      <div class="section"><h1>Education</h1></div>
+      <div class="section"><h1>Work</h1></div>
+      <div class="section"><h1>Projects</h1></div>
+    </div>
+
+    <script type="text/javascript" src="./fullpage.js"></script>
+    <script type="text/javascript">
+      var myFullpage = new fullpage("#fullpage", {
+        navigation: true,
+        showActiveTooltip: true,
+        navigationTooltips: [
+          "Home",
+          "About Me",
+          "Education",
+          "Work",
+          "Projects",
+        ],
+        navigationPosition: "left",
+        sectionsColor: ["#B8D8D8", "#7A9E9F", "#4F6367", "#EEF5DB", "#FE5F55"],
+      });
+    </script>
   </body>
 </html>
