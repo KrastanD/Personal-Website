@@ -4,32 +4,75 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
     <title>Krastan Dimitrov's Personal Website</title>
+    <meta name="author" content="Krastan Dimitrov" />
+    <meta name="description" content="personal resume website" />
     <link rel="stylesheet" type="text/css" href="./fullpage.css" />
+    <script type="text/javascript" src="./fullpage.js"></script>
+
     <style>
-      h1 {
+      .secondaryh1 {
         text-align: center;
+        margin: 0;
+        color: #333;
+        padding-top: 1em;
+        /* font-family: Impact, Charcoal, sans-serif; */
+        font-family: "Courier New", Courier, monospace;
+        font-size: 2em;
+      }
+      #section0 {
+        display: grid;
+        background-size: cover;
+        background-image: url(./background-3045402_1920_flipped.png);
+        grid-template-rows: repeat(16, 1fr);
+        grid-template-columns: auto;
+      }
+      .primaryh1 {
+        font-family: "Courier New", Courier, monospace;
+        text-align: center;
+        font-size: 4em;
+        grid-row-start: 3;
+        position: relative;
+      }
+      div {
+        grid-row-start: 4;
+      }
+      h1 {
+        position: relative;
+        font-family: "Courier New", Courier, monospace;
+        text-align: center;
+        grid-row: 5;
+      }
+      hr {
+        border: 0;
+        clear: both;
+        display: block;
+        width: 30%;
+        background-color: #333;
+        height: 2px;
+        grid-row: 4;
       }
     </style>
   </head>
   <body>
     <div id="fullpage">
-      <div class="section">
-        <h1>
-          Hello! I am Krastan. Checkout my
-          <a href="http://github.com/KrastanD">github</a>!
-        </h1>
+      <div class="section" id="section0">
+        <div>
+          <h1 class="primaryh1">Krastan Dimitrov</h1>
+          <hr />
+          <h1>a software engineer</h1>
+        </div>
       </div>
-      <div class="section"><h1>About Me</h1></div>
-      <div class="section"><h1>Education</h1></div>
-      <div class="section"><h1>Work</h1></div>
-      <div class="section"><h1>Projects</h1></div>
+      <div class="section"><h1 class="secondaryh1">About Me</h1></div>
+      <div class="section"><h1 class="secondaryh1">Education</h1></div>
+      <div class="section"><h1 class="secondaryh1">Work</h1></div>
+      <div class="section"><h1 class="secondaryh1">Projects</h1></div>
     </div>
 
-    <script type="text/javascript" src="./fullpage.js"></script>
     <script type="text/javascript">
       var myFullpage = new fullpage("#fullpage", {
         navigation: true,
         showActiveTooltip: true,
+        verticalCentered: false,
         navigationTooltips: [
           "Home",
           "About Me",
@@ -38,7 +81,7 @@
           "Projects",
         ],
         navigationPosition: "left",
-        sectionsColor: ["#B8D8D8", "#7A9E9F", "#4F6367", "#EEF5DB", "#FE5F55"],
+        sectionsColor: ["#f2ebbf", "#f2ebbf", "#ffe877", "#ff9666", "#45b29d"],
       });
     </script>
   </body>
