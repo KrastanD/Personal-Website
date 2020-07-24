@@ -190,9 +190,9 @@ html.fp-enabled,
 #fp-nav ul li .fp-tooltip {
   position: absolute;
   top: -2px;
-  color: #000;
+  color: #333;
   font-size: 14px;
-  font-family: arial, helvetica, sans-serif;
+  font-family: "Courier New", Courier, monospace;
   white-space: nowrap;
   max-width: 220px;
   overflow: hidden;
