@@ -22,14 +22,19 @@
       #section0 {
         display: grid;
         background-size: cover;
-        background-image: url(./background-3045402_1920_flipped.png);
+        background-image: 
+        /* linear-gradient(
+            to top,
+            rgba(245, 246, 252, 0.3),
+            rgba(33, 33, 33, 0.9)
+          ), */ url(./background-3045402_1920_flipped.png);
         grid-template-rows: repeat(16, 1fr);
         grid-template-columns: auto;
       }
       .primaryh1 {
         font-family: "Courier New", Courier, monospace;
         text-align: center;
-        font-size: 4em;
+        font-size: 5em;
         grid-row-start: 3;
         position: relative;
       }
@@ -41,6 +46,7 @@
         font-family: "Courier New", Courier, monospace;
         text-align: center;
         grid-row: 5;
+        color: #333;
       }
       hr {
         border: 0;
@@ -56,10 +62,23 @@
   <body>
     <div id="fullpage">
       <div class="section" id="section0">
-        <div>
+        <div
+          style="
+            background-color: #fff;
+            width: max-content;
+            align-content: center;
+            padding-left: 2em;
+            padding-right: 2em;
+            margin-left: auto;
+            margin-right: auto;
+            box-shadow: 10px 10px 15px #444;
+          "
+        >
           <h1 class="primaryh1">Krastan Dimitrov</h1>
           <hr />
-          <h1>a software engineer</h1>
+          <h1 style="padding-bottom: 1em;">
+            a software engineer
+          </h1>
         </div>
       </div>
       <div class="section"><h1 class="secondaryh1">About Me</h1></div>
