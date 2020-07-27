@@ -9,26 +9,80 @@
     <link rel="stylesheet" type="text/css" href="./fullpage.css" />
     <link rel="stylesheet" type="text/css" href="./styles.css" />
     <script type="text/javascript" src="./fullpage.js"></script>
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+    <script
+      async
+      defer
+      type="text/javascript"
+      src="https://platform.linkedin.com/badges/js/profile.js"
+    ></script>
   </head>
   <body>
     <div id="fullpage">
       <div class="section" id="section0">
         <div class="whiteboxdiv">
-          <h1 class="primaryh1">Krastan Dimitrov</h1>
-          <hr />
-          <h1 style="padding-bottom: 1em;">
+          <h1 class="s0primaryh1">Krastan Dimitrov</h1>
+          <hr class="s0hr" />
+          <h1 class="s0secondaryh1">
             a software engineer
           </h1>
         </div>
       </div>
-      <div class="section"><h1 class="secondaryh1">About Me</h1></div>
-      <div class="section"><h1 class="secondaryh1">Education</h1></div>
-      <div class="section"><h1 class="secondaryh1">Work</h1></div>
-      <div class="section"><h1 class="secondaryh1">Projects</h1></div>
+      <div class="section" id="section1">
+        <h1 class="s1primaryh1">
+          About Me
+          <hr color="#333" class="s1hr" />
+        </h1>
+        <p class="s1p">
+          <strong class="s1strong">Name:</strong>
+          Krastan Dimitrov
+          <br />
+          <br />
+          <strong class="s1strong">Age:</strong>
+          22 years old <br />
+          <br />
+          <strong class="s1strong">Hobbies:</strong>
+          running, reading, longboarding, hiking, coding <br />
+          <br />
+          <strong class="s1strong">Resume:</strong>
+          <a href="Krastanresume-520.pdf">View</a>
+          <a href="Krastanresume-520.pdf" download="">Download</a>
+          <br />
+          <br />
+          <strong class="s1strong">Bio:</strong>
+          I am a software engineer and a curious individual by heart. Learning
+          and relearning things is part of the trade and I am lucky to find it
+          enjoyable. Finding bugs and performance improvements in the code drive
+          me. It is like finding a hidden treasure every time. Testing and
+          refactoring are also very important to me, because they make code
+          better and life easier.
+          <br />
+          <br />
+          <a
+            class="github-button"
+            href="https://github.com/KrastanD"
+            data-size="large"
+            aria-label="Follow @KrastanD on GitHub"
+            >Follow @KrastanD</a
+          >
+        </p>
+        <img class="s1img" src="IMG_20200512_144850.jpg" />
+      </div>
+      <div class="section"><h1 class="s2primaryh1">Education</h1></div>
+      <div class="section"><h1 class="s2primaryh1">Work</h1></div>
+      <div class="section"><h1 class="s2primaryh1">Projects</h1></div>
     </div>
 
     <script type="text/javascript">
       var myFullpage = new fullpage("#fullpage", {
+        lockanchors: false,
+        anchors: [
+          "HomePage",
+          "AboutMePage",
+          "EducationPage",
+          "WorkPage",
+          "ProjectsPage",
+        ],
         navigation: true,
         showActiveTooltip: true,
         verticalCentered: false,
@@ -42,6 +96,7 @@
         navigationPosition: "left",
         sectionsColor: ["#f2ebbf", "#f2ebbf", "#ffe184", "#b7ca79", "#f2ae72"],
       });
+      fullpage_api.setAllowScrolling(true);
     </script>
   </body>
 </html>
