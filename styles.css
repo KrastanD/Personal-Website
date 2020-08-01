@@ -106,7 +106,8 @@
 #section2 {
   display: grid;
   grid-template-rows: repeat(6, 1fr);
-  grid-template-columns: 25% 20% 30% 25%;
+  grid-template-columns: 25vw 20vw 30vw 25vw;
+  gap: 1em;
 }
 
 .s2pprimary {
@@ -151,8 +152,8 @@
   }
 
   #section1 {
-    grid-template-rows: 10% auto auto 10%;
-    grid-template-columns: 15% auto auto 15%;
+    grid-template-rows: 10vh auto auto 10vh;
+    grid-template-columns: 15vw auto auto 15vw;
   }
   .s1img {
     grid-column: 2/4;
@@ -166,8 +167,9 @@
   }
 
   #section2 {
-    grid-template-rows: 8% repeat(16, 1fr) 10%;
-    grid-template-columns: 15% auto 10%;
+    grid-template-rows: 8vh repeat(16, 1fr) 10vh;
+    grid-template-columns: 15vw auto 10vw;
+    gap: 0;
   }
   .s2pprimary {
     font-size: 1.5em;
