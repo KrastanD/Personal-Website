@@ -146,6 +146,33 @@
   grid-row: 4/5;
 }
 
+#section3 {
+  display: grid;
+  grid-template-rows: repeat(6, 1fr);
+  grid-template-columns: 25vw 20vw 30vw 25vw;
+  gap: 1em;
+}
+
+.s3pprimary {
+  grid-column: 2/3;
+  font-size: 1.3em;
+}
+
+.s3psecondary {
+  font-family: "Courier New", Courier, monospace;
+  line-height: 1.4em;
+  font-size: 1.2em;
+  grid-column: 3/4;
+}
+
+#ecolab {
+  grid-row: 2/3;
+}
+
+#labaide {
+  grid-row: 3/4;
+}
+
 @media (orientation: portrait) {
   .s0primaryh1 {
     text-align: center;
@@ -202,6 +229,42 @@
   }
   #wnhstext {
     grid-row: 7/8;
+    grid-column: 2/3;
+  }
+
+  #section3 {
+    grid-template-rows: 8vh repeat(16, 1fr) 10vh;
+    grid-template-columns: 15vw auto 10vw;
+    gap: 0;
+  }
+  .s3pprimary {
+    font-size: 1.5em;
+  }
+  .s3psecondary {
+    font-size: 1.4em;
+  }
+  #ecolab {
+    grid-row: 2/3;
+    grid-column: 2/3;
+    text-align: center;
+  }
+  #ecolabtext {
+    grid-row: 3/4;
+    grid-column: 2/3;
+  }
+  #ecolabstrong {
+    text-align: center;
+  }
+  #labaidestrong {
+    justify-self: end;
+  }
+  #labaide {
+    grid-row: 4/5;
+    grid-column: 2/3;
+    text-align: center;
+  }
+  #labaidetext {
+    grid-row: 5/6;
     grid-column: 2/3;
   }
 }
