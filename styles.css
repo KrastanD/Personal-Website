@@ -191,11 +191,12 @@
     grid-row: 2;
     padding-left: 0em;
     padding-right: 0em;
+    font-size: 1.4em;
   }
 
   #section2 {
     grid-template-rows: 8vh repeat(16, 1fr) 10vh;
-    grid-template-columns: 15vw auto 10vw;
+    grid-template-columns: 15vw auto 15vw;
     gap: 0;
   }
   .s2pprimary {
@@ -234,7 +235,7 @@
 
   #section3 {
     grid-template-rows: 8vh repeat(16, 1fr) 10vh;
-    grid-template-columns: 15vw auto 10vw;
+    grid-template-columns: 15vw auto 15vw;
     gap: 0;
   }
   .s3pprimary {
@@ -256,7 +257,7 @@
     text-align: center;
   }
   #labaidestrong {
-    justify-self: end;
+    justify-self: ;
   }
   #labaide {
     grid-row: 4/5;
