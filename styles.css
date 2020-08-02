@@ -45,8 +45,9 @@
 
 #section1 {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: auto;
+  grid-template-columns: 25vw 25vw 25vw 25vw;
+  grid-template-rows: repeat(6, 1fr);
+  gap: 1em;
 }
 
 .s1p {
@@ -252,12 +253,6 @@
   #ecolabtext {
     grid-row: 3/4;
     grid-column: 2/3;
-  }
-  #ecolabstrong {
-    text-align: center;
-  }
-  #labaidestrong {
-    justify-self: ;
   }
   #labaide {
     grid-row: 4/5;
