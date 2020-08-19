@@ -46,7 +46,7 @@
 #section1 {
   display: grid;
   grid-template-columns: 25vw 25vw 25vw 25vw;
-  grid-template-rows: repeat(6, 1fr);
+  grid-template-rows: 10vh auto 10vh;
   gap: 1em;
 }
 
@@ -106,7 +106,7 @@
 
 #section2 {
   display: grid;
-  grid-template-rows: repeat(6, 1fr);
+  grid-template-rows: 10vh auto auto auto 10vh;
   grid-template-columns: 25vw 20vw 30vw 25vw;
   gap: 1em;
 }
@@ -149,7 +149,7 @@
 
 #section3 {
   display: grid;
-  grid-template-rows: repeat(6, 1fr);
+  grid-template-rows: 8vh auto auto 10vh;
   grid-template-columns: 25vw 20vw 30vw 25vw;
   gap: 1em;
 }
@@ -166,6 +166,18 @@
   grid-column: 3/4;
 }
 
+.s3strongprimary {
+  line-height: 2em;
+  color: #003d5c;
+  font-family: sans-serif;
+  font-size: 1.22em;
+}
+
+.s3strongsecondary {
+  font-size: 1.2em;
+  line-height: 2em;
+}
+
 #ecolab {
   grid-row: 2/3;
 }
@@ -177,28 +189,28 @@
 #section4 {
   display: grid;
   grid-template-columns: 25vw 25vw 25vw 25vw;
-  grid-template-rows: repeat(6, 1fr);
+  grid-template-rows: 10vh auto;
   gap: 1em;
 }
 
 .autofillgrid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  grid-template-rows: repeat(auto-fill, minmax(420px, 1fr));
   grid-column: 2/-2;
-  align-items: center;
+  align-items: flex-start;
   justify-items: center;
 }
 
 .s4figurelong {
   width: 280px;
-  height: 400px;
+  height: 380px;
   background-position-x: center;
   overflow: hidden;
   position: relative;
 }
 
 .s4figureshort {
-  align-self: flex-start;
   width: 280px;
   height: 180px;
   background-position-x: center;
@@ -223,7 +235,7 @@ figcaption:hover {
 
 .s4imglong {
   width: 280px;
-  height: 400px;
+  height: 380px;
   object-fit: cover;
   object-position: top;
 }
@@ -282,8 +294,9 @@ a:hover {
   }
 
   #section1 {
-    grid-template-rows: 5vh auto auto 10vh;
+    grid-template-rows: 5vh auto auto 5vh;
     grid-template-columns: 15vw auto auto 15vw;
+    gap: 0;
   }
   .s1img {
     grid-column: 2/4;
@@ -298,7 +311,7 @@ a:hover {
   }
 
   #section2 {
-    grid-template-rows: 8vh repeat(16, 1fr) 10vh;
+    grid-template-rows: 5vh repeat(16, 1fr) 10vh;
     grid-template-columns: 15vw auto 15vw;
     gap: 0;
   }
@@ -337,7 +350,7 @@ a:hover {
   }
 
   #section3 {
-    grid-template-rows: 8vh repeat(16, 1fr) 10vh;
+    grid-template-rows: 5vh repeat(16, 1fr) 10vh;
     grid-template-columns: 15vw auto 15vw;
     gap: 0;
   }
@@ -347,6 +360,11 @@ a:hover {
   .s3psecondary {
     font-size: 1.4em;
   }
+
+  .s3strongprimary {
+    line-height: normal;
+  }
+
   #ecolab {
     grid-row: 2/3;
     grid-column: 2/3;
@@ -367,6 +385,7 @@ a:hover {
   }
 
   #section4 {
+    grid-template-rows: 5vh auto;
     grid-template-columns: 15vw auto 15vw;
   }
 }
