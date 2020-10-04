@@ -1,7 +1,7 @@
 #section0 {
   display: grid;
   background-size: cover;
-  background-image: url(./background-3045402_1920_flipped.png);
+  background-image: url(./assets/background-3045402_1920_flipped.png);
   grid-template-rows: repeat(16, 1fr);
   grid-template-columns: auto;
 }
