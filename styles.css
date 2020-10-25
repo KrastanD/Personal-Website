@@ -149,7 +149,7 @@
 
 #section3 {
   display: grid;
-  grid-template-rows: 8vh auto auto 10vh;
+  grid-template-rows: 8vh auto auto auto 10vh;
   grid-template-columns: 25vw 20vw 30vw 25vw;
   gap: 1em;
 }
@@ -162,7 +162,7 @@
 .s3psecondary {
   font-family: "Courier New", Courier, monospace;
   line-height: 1.4em;
-  font-size: 1.2em;
+  font-size: 1.15em;
   grid-column: 3/4;
 }
 
@@ -178,12 +178,16 @@
   line-height: 2em;
 }
 
-#ecolab {
+#vigtory {
   grid-row: 2/3;
 }
 
-#labaide {
+#ecolab {
   grid-row: 3/4;
+}
+
+#labaide {
+  grid-row: 4/5;
 }
 
 #section4 {
@@ -365,22 +369,33 @@ a:hover {
     line-height: normal;
   }
 
-  #ecolab {
+  #vigtory {
     grid-row: 2/3;
     grid-column: 2/3;
     text-align: center;
   }
-  #ecolabtext {
+
+  #vigtorytext {
     grid-row: 3/4;
     grid-column: 2/3;
   }
-  #labaide {
+
+  #ecolab {
     grid-row: 4/5;
     grid-column: 2/3;
     text-align: center;
   }
-  #labaidetext {
+  #ecolabtext {
     grid-row: 5/6;
+    grid-column: 2/3;
+  }
+  #labaide {
+    grid-row: 6/7;
+    grid-column: 2/3;
+    text-align: center;
+  }
+  #labaidetext {
+    grid-row: 7/8;
     grid-column: 2/3;
   }
 
