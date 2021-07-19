@@ -1,8 +1,10 @@
+import { Columns } from "./App";
+
 interface ColumnProps {
   children: React.ReactNode | React.ReactNode[];
   selected: string;
-  title: string;
-  handleClick: (columnName: string) => void;
+  title: Columns;
+  handleClick: (columnName: Columns) => void;
 }
 const smallWidth = "w-1/10";
 const largeWidth = "w-3/5";
