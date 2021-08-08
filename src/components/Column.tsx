@@ -1,4 +1,4 @@
-import { Columns } from "./App";
+import { Columns } from "../App";
 
 interface ColumnProps {
   children: React.ReactNode | React.ReactNode[];
