@@ -12,7 +12,7 @@ export const ColumnBoiler = (props: ColumnBoilerProps) => {
     <div className={`min-h-full mx-auto ${bgColor}`}>
       {selected === column ? (
         <div className="p-6">
-          <h1 className="text-2xl text-center">{column}</h1>
+          <h1 className="text-2xl text-center mb-6">{column}</h1>
           {children}
         </div>
       ) : (

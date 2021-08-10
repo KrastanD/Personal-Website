@@ -6,6 +6,9 @@ module.exports = {
       width: {
         "1/10": "10%",
       },
+      backgroundImage: {
+        homeImg: "url(assets/background_flipped.png)",
+      },
     },
   },
   variants: {
