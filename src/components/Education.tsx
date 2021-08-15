@@ -1,6 +1,6 @@
 const Education = () => {
   return (
-    <div className="grid grid-cols-2 gap-6">
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
       <p>
         <strong>University of Illinois at Urbana-Champaign</strong>
         <br />

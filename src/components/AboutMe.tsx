@@ -1,6 +1,7 @@
 import photoAtUIUC from "../assets/photoAtUIUC.jpg";
 import resume from "../assets/Krastanresume-1220.pdf";
 import { milisecondsToYears } from "../utls";
+import GitHubButton from "react-github-btn";
 
 const AboutMe = () => {
   const bday = new Date("April 9, 1998");
@@ -19,10 +20,11 @@ const AboutMe = () => {
         running, reading, longboarding, hiking, coding <br />
         <br />
         <strong>Resume: </strong>
-        <a href={resume} target="_blank" rel="noreferrer">
-          View{" "}
+        <a href={resume} target="_blank" rel="noreferrer" className="underline">
+          View
         </a>
-        <a href={resume} download="KrastanResume">
+        <span> </span>
+        <a href={resume} download="KrastanResume" className="underline">
           Download
         </a>
         <br />
@@ -33,6 +35,11 @@ const AboutMe = () => {
         the code drive me. It is like finding a hidden treasure every time.
         Testing and refactoring are also very important to me, because they make
         code better and life easier.
+        <br />
+        <br />
+        <GitHubButton href="https://github.com/KrastanD">
+          Follow @KrastanD
+        </GitHubButton>
       </p>
       <img src={photoAtUIUC} alt="Standing in front of Altgeld" />
     </div>
