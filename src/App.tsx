@@ -24,7 +24,7 @@ function App() {
   };
 
   return (
-    <div className="flex flex-row min-h-screen font-sans">
+    <div className="flex flex-col h-screen md:flex-row md:min-h-screen font-sans">
       <Column
         title={Columns.About_Me}
         selected={selected}

@@ -25,7 +25,9 @@ export const ColumnBoiler = (props: ColumnBoilerProps) => {
           {children}
         </div>
       ) : (
-        <p className="text-2xl text-center pt-6">{column}</p>
+        <p className="text-2xl md:text-xl lg:text-2xl text-center md:pt-6">
+          {column}
+        </p>
       )}
     </div>
   );

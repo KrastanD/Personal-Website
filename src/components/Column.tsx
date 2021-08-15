@@ -6,9 +6,11 @@ interface ColumnProps {
   title: Columns;
   handleClick: (columnName: Columns) => void;
 }
-const smallWidth = "w-1/10";
-const largeWidth = "w-3/5";
-
+const md = window.screen.width >= 768;
+const smallWidth = `${md ? "w-1/10" : "h-1/20"}`;
+const largeWidth = `${
+  md ? "w-3/5" : "h-4/5"
+} md:overflow-y-hidden md:h-auto overflow-y-scroll`;
 export const Column = (props: ColumnProps): React.ReactElement => {
   const { selected, handleClick, title } = props;
 

@@ -9,6 +9,10 @@ module.exports = {
       backgroundImage: {
         homeImg: "url(assets/background_flipped_cropped.png)",
       },
+      height: {
+        "1/10": "10%",
+        "1/20": "5%",
+      },
     },
   },
   variants: {

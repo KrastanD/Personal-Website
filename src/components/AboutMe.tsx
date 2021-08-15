@@ -1,7 +1,10 @@
 import photoAtUIUC from "../assets/photoAtUIUC.jpg";
 import resume from "../assets/Krastanresume-1220.pdf";
+import { milisecondsToYears } from "../utls";
 
 const AboutMe = () => {
+  const bday = new Date("April 9, 1998");
+  const age = milisecondsToYears(new Date().getTime() - bday.getTime());
   return (
     <div className="grid grid-cols-1 xl:grid-cols-2 gap-6">
       <p>
@@ -10,7 +13,7 @@ const AboutMe = () => {
         <br />
         <br />
         <strong>Age: </strong>
-        22 years old <br />
+        {age} years old <br />
         <br />
         <strong>Hobbies: </strong>
         running, reading, longboarding, hiking, coding <br />

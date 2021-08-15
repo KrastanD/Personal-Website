@@ -1,7 +1,7 @@
 const Title = () => {
   return (
     <div className="flex justify-center">
-      <div className="flex-col text-center justify-center h-screen inline-flex">
+      <div className="flex-col text-center md:justify-center h-screen inline-flex">
         <div
           style={{ boxShadow: "10px 10px 15px #444" }}
           className="bg-white p-10"
