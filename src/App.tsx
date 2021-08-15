@@ -1,6 +1,6 @@
 import { useState } from "react";
-import { Column } from "./components/Column";
-import { ColumnBoiler } from "./components/ColumnBoiler";
+import { Division } from "./components/Division";
+import { DivisionBoiler } from "./components/DivisionBoiler";
 
 import AboutMe from "./components/AboutMe";
 import Education from "./components/Education";
@@ -8,7 +8,7 @@ import Work from "./components/Work";
 import Projects from "./components/Projects";
 import Title from "./components/Title";
 
-export enum Columns {
+export enum Divisions {
   About_Me = "About Me",
   Education = "Education",
   Title = "Krastan Dimitrov",
@@ -17,10 +17,10 @@ export enum Columns {
 }
 
 function App() {
-  const [selected, setSelected] = useState(Columns.Title);
+  const [selected, setSelected] = useState(Divisions.Title);
 
-  const handleClick = (columnName: Columns) => {
-    setSelected(columnName);
+  const handleClick = (divisionName: Divisions) => {
+    setSelected(divisionName);
   };
   const md = window.screen.width >= 768;
 
@@ -30,72 +30,72 @@ function App() {
         md ? "min-h-screen" : "h-screen"
       } md:flex-row  font-sans`}
     >
-      <Column
-        title={Columns.About_Me}
+      <Division
+        title={Divisions.About_Me}
         selected={selected}
         handleClick={handleClick}
       >
-        <ColumnBoiler
+        <DivisionBoiler
           selected={selected}
-          column={Columns.About_Me}
+          division={Divisions.About_Me}
           bgColor="bg-indigo-100"
         >
           <AboutMe />
-        </ColumnBoiler>
-      </Column>
-      <Column
-        title={Columns.Education}
+        </DivisionBoiler>
+      </Division>
+      <Division
+        title={Divisions.Education}
         selected={selected}
         handleClick={handleClick}
       >
-        <ColumnBoiler
+        <DivisionBoiler
           selected={selected}
-          column={Columns.Education}
+          division={Divisions.Education}
           bgColor="bg-yellow-100"
         >
           <Education />
-        </ColumnBoiler>
-      </Column>
-      <Column
-        title={Columns.Title}
+        </DivisionBoiler>
+      </Division>
+      <Division
+        title={Divisions.Title}
         selected={selected}
         handleClick={handleClick}
       >
-        <ColumnBoiler
+        <DivisionBoiler
           selected={selected}
-          column={Columns.Title}
+          division={Divisions.Title}
           bgColor="bg-homeImg"
           noTitle
         >
           <Title />
-        </ColumnBoiler>
-      </Column>
-      <Column
-        title={Columns.Work}
+        </DivisionBoiler>
+      </Division>
+      <Division
+        title={Divisions.Work}
         selected={selected}
         handleClick={handleClick}
       >
-        <ColumnBoiler
+        <DivisionBoiler
           selected={selected}
-          column={Columns.Work}
+          division={Divisions.Work}
           bgColor="bg-purple-100"
         >
           <Work />
-        </ColumnBoiler>
-      </Column>
-      <Column
-        title={Columns.Projects}
+        </DivisionBoiler>
+      </Division>
+      <Division
+        title={Divisions.Projects}
         selected={selected}
         handleClick={handleClick}
       >
-        <ColumnBoiler
+        <DivisionBoiler
           selected={selected}
-          column={Columns.Projects}
+          division={Divisions.Projects}
           bgColor="bg-pink-100"
         >
           <Projects />
-        </ColumnBoiler>
-      </Column>
+        </DivisionBoiler>
+      </Division>
     </div>
   );
 }

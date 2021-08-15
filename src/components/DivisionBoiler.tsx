@@ -1,17 +1,17 @@
-import { Columns } from "../App";
+import { Divisions } from "../App";
 
-interface ColumnBoilerProps {
-  selected: Columns;
-  column: Columns;
+interface DivisionBoilerProps {
+  selected: Divisions;
+  division: Divisions;
   bgColor: string;
   noTitle?: boolean;
   children?: React.ReactNode | React.ReactNode[];
 }
-export const ColumnBoiler = (props: ColumnBoilerProps) => {
-  const { selected, column, bgColor, noTitle, children } = props;
+export const DivisionBoiler = (props: DivisionBoilerProps) => {
+  const { selected, division, bgColor, noTitle, children } = props;
   return (
     <div className={`min-h-full mx-auto ${bgColor}`}>
-      {selected === column ? (
+      {selected === division ? (
         <div className="p-6">
           {!noTitle && (
             <h1
@@ -19,14 +19,14 @@ export const ColumnBoiler = (props: ColumnBoilerProps) => {
                 selected ? "text-4xl" : "text-2xl"
               } text-center mb-6`}
             >
-              {column}
+              {division}
             </h1>
           )}
           {children}
         </div>
       ) : (
         <p className="text-2xl md:text-xl lg:text-2xl text-center md:pt-6">
-          {column}
+          {division}
         </p>
       )}
     </div>

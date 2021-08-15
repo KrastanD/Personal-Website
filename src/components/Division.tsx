@@ -1,17 +1,17 @@
-import { Columns } from "../App";
+import { Divisions } from "../App";
 
-interface ColumnProps {
+interface DivisionProps {
   children: React.ReactNode | React.ReactNode[];
   selected: string;
-  title: Columns;
-  handleClick: (columnName: Columns) => void;
+  title: Divisions;
+  handleClick: (divisionName: Divisions) => void;
 }
 const md = window.screen.width >= 768;
 const smallWidth = `${md ? "w-1/10" : "h-1/20"}`;
 const largeWidth = `${
   md ? "w-3/5" : "h-4/5"
 } md:overflow-y-hidden md:h-auto overflow-y-scroll`;
-export const Column = (props: ColumnProps): React.ReactElement => {
+export const Division = (props: DivisionProps): React.ReactElement => {
   const { selected, handleClick, title } = props;
 
   return (
