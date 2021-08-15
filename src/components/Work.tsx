@@ -10,7 +10,7 @@ const Work = () => {
         <strong>Software Engineer</strong>
         <br />
         Fubo Gaming is the sportsbook subsidiary of fuboTV. I am continuing my
-        work from
+        work from Vigtory and developing the mobile application.
       </p>
       <p>
         <strong>Vigtory</strong>
@@ -22,8 +22,12 @@ const Work = () => {
         <br />
         Vigtory was a Chicago-based sportsbook where I worked on the Android and
         iOS app. The app is built with React Native and TypeScript and uses a
-        GraphQL API. I am enjoying working in the fast-paced environment of a
-        start-up where I am being challenged on a daily basis.
+        GraphQL API. I enjoyed working in the fast-paced environment of a
+        start-up where I was being challenged on a daily basis. I was able to
+        work on a variety of projects including upgrading the app from React
+        Navigation 4 to 5, implementing a third-party API displaying articles
+        and refactoring components such as consolidating four tab components
+        into a single reusable one.
       </p>
 
       <p>

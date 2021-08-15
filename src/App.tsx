@@ -24,7 +24,7 @@ function App() {
   };
 
   return (
-    <div className="flex flex-row min-h-screen">
+    <div className="flex flex-row min-h-screen font-sans">
       <Column
         title={Columns.About_Me}
         selected={selected}
@@ -60,6 +60,7 @@ function App() {
           selected={selected}
           column={Columns.Title}
           bgColor="bg-homeImg"
+          noTitle
         >
           <Title />
         </ColumnBoiler>

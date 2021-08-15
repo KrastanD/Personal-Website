@@ -3,7 +3,7 @@ import resume from "../assets/Krastanresume-1220.pdf";
 
 const AboutMe = () => {
   return (
-    <div className="grid grid-cols-2">
+    <div className="grid grid-cols-1 xl:grid-cols-2 gap-6">
       <p>
         <strong>Name: </strong>
         Krastan Dimitrov
