@@ -13,6 +13,10 @@ module.exports = {
         "1/10": "10%",
         "1/20": "5%",
       },
+      transitionProperty: {
+        width: "width",
+        height: "height",
+      },
     },
   },
   variants: {

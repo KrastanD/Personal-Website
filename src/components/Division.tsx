@@ -7,10 +7,13 @@ interface DivisionProps {
   handleClick: (divisionName: Divisions) => void;
 }
 const md = window.screen.width >= 768;
-const smallWidth = `${md ? "w-1/10" : "h-1/20"}`;
+const smallWidth = `${
+  md ? "w-1/10" : "h-1/20"
+} transition-gpu transition-height md:transition-width duration-250 ease-in-out
+`;
 const largeWidth = `${
   md ? "w-3/5" : "h-4/5"
-} md:overflow-y-hidden md:h-auto overflow-y-scroll`;
+} md:overflow-y-hidden md:h-auto overflow-y-scroll transition-gpu transition-height md:transition-width duration-250 ease-in-out`;
 export const Division = (props: DivisionProps): React.ReactElement => {
   const { selected, handleClick, title } = props;
 
