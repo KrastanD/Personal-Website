@@ -22,9 +22,14 @@ function App() {
   const handleClick = (columnName: Columns) => {
     setSelected(columnName);
   };
+  const md = window.screen.width >= 768;
 
   return (
-    <div className="flex flex-col h-screen md:flex-row md:min-h-screen font-sans">
+    <div
+      className={`flex flex-col ${
+        md ? "min-h-screen" : "h-screen"
+      } md:flex-row  font-sans`}
+    >
       <Column
         title={Columns.About_Me}
         selected={selected}
