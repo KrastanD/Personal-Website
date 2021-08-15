@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/static/css/main.a31d4b3a.chunk.css",
+    "main.js": "/static/js/main.7aa6d6c6.chunk.js",
+    "main.js.map": "/static/js/main.7aa6d6c6.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.e15d893a.js",
+    "runtime-main.js.map": "/static/js/runtime-main.e15d893a.js.map",
+    "static/js/2.17ba0f88.chunk.js": "/static/js/2.17ba0f88.chunk.js",
+    "static/js/2.17ba0f88.chunk.js.map": "/static/js/2.17ba0f88.chunk.js.map",
+    "static/js/3.faee45e6.chunk.js": "/static/js/3.faee45e6.chunk.js",
+    "static/js/3.faee45e6.chunk.js.map": "/static/js/3.faee45e6.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.a31d4b3a.chunk.css.map": "/static/css/main.a31d4b3a.chunk.css.map",
+    "static/js/2.17ba0f88.chunk.js.LICENSE.txt": "/static/js/2.17ba0f88.chunk.js.LICENSE.txt",
+    "static/media/FinesseNationExample2.3351d644.jpg": "/static/media/FinesseNationExample2.3351d644.jpg",
+    "static/media/GithubAppExample.93d98138.jpg": "/static/media/GithubAppExample.93d98138.jpg",
+    "static/media/Krastanresume-1220.dbb19291.pdf": "/static/media/Krastanresume-1220.dbb19291.pdf",
+    "static/media/LyricGeniusExample.ab321d43.jpg": "/static/media/LyricGeniusExample.ab321d43.jpg",
+    "static/media/MementoExample.a924473a.jpg": "/static/media/MementoExample.a924473a.jpg",
+    "static/media/index.css": "/static/media/background_flipped_cropped.9830d3e6.png",
+    "static/media/itrustExample.c35d3391.jpg": "/static/media/itrustExample.c35d3391.jpg",
+    "static/media/photoAtUIUC.90f9a01e.jpg": "/static/media/photoAtUIUC.90f9a01e.jpg",
+    "static/media/websiteExample.a8cd0319.png": "/static/media/websiteExample.a8cd0319.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.e15d893a.js",
+    "static/js/2.17ba0f88.chunk.js",
+    "static/css/main.a31d4b3a.chunk.css",
+    "static/js/main.7aa6d6c6.chunk.js"
+  ]
+}
