@@ -28,7 +28,7 @@ function App() {
     <div
       className={`flex flex-col ${
         md ? "min-h-screen" : "h-screen"
-      } md:flex-row  font-sans`}
+      } md:flex-row font-sans`}
     >
       <Division
         title={Divisions.About_Me}
