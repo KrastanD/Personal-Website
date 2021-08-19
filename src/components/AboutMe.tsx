@@ -1,4 +1,4 @@
-import photoAtUIUC from "../assets/smallerPhotoAtUIUC.webp";
+import photoAtUIUC from "../assets/smallerPhotoAtUIUC.jpg";
 import resume from "../assets/Krastanresume-1220.pdf";
 import { milisecondsToYears } from "../utls";
 import GitHubButton from "react-github-btn";
