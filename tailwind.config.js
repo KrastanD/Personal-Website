@@ -7,7 +7,7 @@ module.exports = {
         "1/10": "10%",
       },
       backgroundImage: {
-        homeImg: "url(assets/background_flipped_cropped.png)",
+        homeImg: "url(assets/background_flipped_cropped.webp)",
       },
       height: {
         "1/10": "10%",
