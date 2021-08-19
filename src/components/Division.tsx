@@ -9,11 +9,11 @@ interface DivisionProps {
 const md = window.screen.width >= 768;
 const smallWidth = `${
   md ? "w-1/10" : "h-1/20"
-} transition-gpu transition-height md:transition-width duration-250 ease-in-out
+} transition-height md:transition-width md:duration-500 ease-in-out duration-500
 `;
 const largeWidth = `${
   md ? "w-3/5" : "h-4/5"
-} md:overflow-y-hidden md:h-auto overflow-y-scroll transition-gpu transition-height md:transition-width duration-250 ease-in-out`;
+} md:overflow-y-hidden md:h-auto overflow-y-scroll transition-height md:transition-width md:duration-500 duration-500 ease-in-out`;
 export const Division = (props: DivisionProps): React.ReactElement => {
   const { selected, handleClick, title } = props;
 
