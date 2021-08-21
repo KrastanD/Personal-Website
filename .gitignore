@@ -22,4 +22,12 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
+#unused images
 assets/background-3045402_1920.png
+src/assets/betterPhotoAtUIUC.jpg
+src/assets/betterPhotoAtUIUC.webp
+src/assets/smallerPhotoAtUIUC.jpg
+src/assets/background_flipped_cropped.png
+src/assets/background_flipped.png
+src/assets/background.png
+src/assets/photoAtUIUC.jpg
