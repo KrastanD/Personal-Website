@@ -20,11 +20,20 @@ const AboutMe = () => {
         running, reading, longboarding, hiking, coding <br />
         <br />
         <strong>Resume: </strong>
-        <a href={resume} target="_blank" rel="noreferrer" className="underline">
+        <a
+          href={resume}
+          target="_blank"
+          rel="noreferrer"
+          className="hover:text-kdGreen"
+        >
           View
         </a>
         <span> </span>
-        <a href={resume} download="KrastanResume" className="underline">
+        <a
+          href={resume}
+          download="KrastanResume"
+          className="hover:text-kdGreen"
+        >
           Download
         </a>
         <br />

@@ -17,6 +17,9 @@ module.exports = {
         width: "width",
         height: "height",
       },
+      colors: {
+        kdGreen: "#67cc8e",
+      },
     },
   },
   variants: {
