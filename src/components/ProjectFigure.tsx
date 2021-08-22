@@ -22,7 +22,7 @@ function ProjectFigure(props: {
 
   if (link) {
     return (
-      <a href={link} target="_blank" className="flex">
+      <a href={link} target="_blank" className="flex" rel="noreferrer">
         {Card}
       </a>
     );
