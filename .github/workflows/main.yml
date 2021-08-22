@@ -1,9 +1,9 @@
-# This worflow installs dependencies, deploys to gh-pages, and adds a CNAME
+# This worflow is ran on pushes to master. It installs dependencies, deploys to gh-pages, and adds a CNAME
 
 name: CD
 
 on:
-  pull_request:
+  push:
     branches: [ master ]
 
   workflow_dispatch:
