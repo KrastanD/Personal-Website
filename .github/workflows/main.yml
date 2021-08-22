@@ -18,7 +18,7 @@ jobs:
 
     steps:
       - name: Checks out master
-        uses: actions/checkout@v2
+      - uses: actions/checkout@v2
         with:
           ref: master
         
@@ -27,7 +27,7 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
           cache: "npm"
-        run: npm run deploy
+      - run: npm run deploy
         
       - name: Checks out gh-pages
         uses: actions/checkout@v2
@@ -36,7 +36,7 @@ jobs:
         
       - name: Adds CNAME file 
         uses: actions/checkout@v2
-        run: |
+      - run: |
           echo "www.krastan.com" > CNAME
           git config user.name github-actions
           git config user.email github-actions@github.com
