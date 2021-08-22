@@ -4,7 +4,7 @@ name: CD
 
 on:
   push:
-    branches: [ master ]
+    branches: [master]
 
   workflow_dispatch:
 
@@ -28,27 +28,27 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
           cache: "npm"
-        
-      - name: Install dependencies  
+
+      - name: Install dependencies
         run: npm install
-          
+
       - name: Deploy with gh-pages
         run: |
           git remote set-url origin https://git:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git
           npm run deploy -- -u "github-actions-bot <support+actions@github.com>"
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}        
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Checkout gh-pages branch
         uses: actions/checkout@v2
         with:
           ref: gh-pages
-       
-      - name: Add CNAME 
+
+      - name: Add CNAME
         run: |
           echo "www.krastan.com" > CNAME
-          git config user.name github-actions
-          git config user.email github-actions@github.com
+          git config user.name github-actions-bot
+          git config user.email support+actions@github.com
           git add CNAME
           git commit -m "Add CNAME"
           git push
