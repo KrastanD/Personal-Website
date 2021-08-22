@@ -1,5 +1,6 @@
+# This worflow installs dependencies, deploys to gh-pages, and adds a CNAME
 
-name: CI
+name: CD
 
 on:
   pull_request:
@@ -8,7 +9,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  build:
+  deploy:
     runs-on: ubuntu-latest
 
     strategy:
@@ -17,17 +18,19 @@ jobs:
         # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
 
     steps:
-      - uses: actions/checkout@v2
+      - name: Checkout master branch
+        uses: actions/checkout@v2
         with:
           ref: master
 
-
-      - uses: actions/setup-node@v2
+      - name: Set up npm
+        uses: actions/setup-node@v2
         with:
           node-version: ${{ matrix.node-version }}
           cache: "npm"
         
-      - run: npm install
+      - name: Install dependencies  
+        run: npm install
           
       - name: Deploy with gh-pages
         run: |
@@ -36,11 +39,13 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}        
 
-      - uses: actions/checkout@v2
+      - name: Checkout gh-pages branch
+        uses: actions/checkout@v2
         with:
           ref: gh-pages
-        
-      - run: |
+       
+      - name: Add CNAME 
+        run: |
           echo "www.krastan.com" > CNAME
           git config user.name github-actions
           git config user.email github-actions@github.com
