@@ -17,25 +17,20 @@ jobs:
         # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
 
     steps:
-      - name: Checks out master
       - uses: actions/checkout@v2
         with:
           ref: master
-        
-      - name: Deploys to github pages
-        uses: actions/setup-node@v2
+
+      - uses: actions/setup-node@v2
         with:
           node-version: ${{ matrix.node-version }}
           cache: "npm"
       - run: npm run deploy
         
-      - name: Checks out gh-pages
-        uses: actions/checkout@v2
+      - uses: actions/checkout@v2
         with:
           ref: gh-pages
         
-      - name: Adds CNAME file 
-        uses: actions/checkout@v2
       - run: |
           echo "www.krastan.com" > CNAME
           git config user.name github-actions
