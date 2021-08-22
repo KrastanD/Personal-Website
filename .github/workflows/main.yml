@@ -21,9 +21,6 @@ jobs:
         with:
           ref: master
 
-      - run: |
-          git config user.name github-actions
-          git config user.email github-actions@github.com
 
       - uses: actions/setup-node@v2
         with:
@@ -38,12 +35,14 @@ jobs:
           npm run deploy -- -u "github-actions-bot <support+actions@github.com>"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}        
-          
+
       - uses: actions/checkout@v2
         with:
           ref: gh-pages
         
       - run: |
           echo "www.krastan.com" > CNAME
+          git config user.name github-actions
+          git config user.email github-actions@github.com
           git commit -am "Add CNAME"
           git push
