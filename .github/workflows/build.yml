@@ -1,0 +1,31 @@
+# This workflow is ran on pushes to all branches and on pull requests to master. It builds the project. 
+
+name: CI
+
+on:
+  push:
+    branches: "**"
+  pull_request:
+    branches: [ master ]
+
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+      
+      - name: Set up npm
+        uses: actions/setup-node@v2
+        with:
+          node-version: ${{ matrix.node-version }}
+          cache: "npm"
+      
+      - name: Install dependencies
+        run: npm install
+        
+      - name: Build project
+        run: npm run build
+      
