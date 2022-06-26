@@ -1,10 +1,12 @@
+import ProjectFigure from "./ProjectFigure";
+
 import finesseNationImg from "../assets/FinesseNationExample2.jpg";
 import mementoImg from "../assets/MementoExample.jpg";
 import lyricGeniusImg from "../assets/LyricGeniusExample.jpg";
 import websiteExampleImg from "../assets/websiteExample.png";
 import githubAppExampleImg from "../assets/GithubAppExample.jpg";
-import iTrustImage from "../assets/itrustExample.jpg";
-import ProjectFigure from "./ProjectFigure";
+import playoutImg from "../assets/PlayOut.png";
+import hitomezashiImg from "../assets/Hitomezashi.png";
 
 const Projects = () => {
   return (
@@ -12,7 +14,7 @@ const Projects = () => {
       <ProjectFigure
         image={finesseNationImg}
         title={"Finesse Nation"}
-        description={`An app written in Flutter and Node.js and MongoDB. Users can make
+        description={`An app written in Flutter, Node.js with Express, and MongoDB. Users can make
               posts about free things on campus. Posts can include a picture,
               location, and date and can be commented and voted on.`}
         link={"https://www.github.com/FinesseNation"}
@@ -20,7 +22,7 @@ const Projects = () => {
       <ProjectFigure
         image={mementoImg}
         title={"Memento"}
-        description={`An app written in React Native and Node.js and MongoDB. Users can
+        description={`An app written in React Native, Node.js with Express, and MongoDB. Users can
               make posts about what they have done and set the date, time, and
               location.`}
         link={"https://www.github.com/KrastanD/Memento"}
@@ -49,11 +51,16 @@ const Projects = () => {
         link="https://github.com/KrastanD/GitHubApp"
       />
       <ProjectFigure
-        image={iTrustImage}
-        title="iTrust"
-        description={`A medical application that allows patients and doctors to communicate
-          and store information like records and prescriptions. It is written in
-          JSP, Java, and MySQL.`}
+        image={playoutImg}
+        title="Play Out"
+        description="A React website where users can see the all the Formula 1 race results for a given year for both drivers' and constructors' championships. It also has a graph that tracks the championship battle over the course of the year."
+        link="https://playout.krastan.com"
+      />
+      <ProjectFigure
+        image={hitomezashiImg}
+        title="Hitomezashi"
+        description="A vanilla html/css/js website where users can create custom hitmezashi stitch patterns"
+        link="https://hitomezashi.krastan.com"
       />
     </div>
   );
