@@ -50,7 +50,11 @@ const AboutMe = () => {
           Follow @KrastanD
         </GitHubButton>
       </p>
-      <img src={photoAtUIUC} alt="Standing in front of Altgeld" />
+      <img
+        src={photoAtUIUC}
+        alt="Standing in front of Altgeld"
+        className="rounded"
+      />
     </div>
   );
 };
