@@ -1,11 +1,18 @@
-function ProjectFigure(props: {
+type ProjectFigureProps = {
   image: string;
   title: string;
   description: string;
+  techs: string[];
   link?: string;
-}) {
-  const { image, title, description, link } = props;
+};
 
+function ProjectFigure({
+  image,
+  title,
+  description,
+  techs,
+  link,
+}: ProjectFigureProps) {
   const InnerCard = () => (
     <div className="flex flex-col justify-between">
       <>
@@ -17,6 +24,13 @@ function ProjectFigure(props: {
         />
       </>
       <p className="mt-6">{description}</p>
+      <div className="flex flex-row flex-wrap">
+        {techs.map((tech) => (
+          <p className="pl-2 pr-2 border border-black rounded-2xl m-1 ml-0 mr-2 text-sm">
+            {tech}
+          </p>
+        ))}
+      </div>
     </div>
   );
 

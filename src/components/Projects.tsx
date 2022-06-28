@@ -14,36 +14,46 @@ const Projects = () => {
       <ProjectFigure
         image={playoutImg}
         title="Play Out"
-        description="A React website where users can see the all the Formula 1 race results for a given year for both drivers' and constructors' championships. It also has a graph that tracks the championship battle over the course of the year."
+        description="A website where users can see the all the Formula 1 race results for a given year for both drivers' and constructors' championships. It also has a graph that tracks the championship battle over the course of the year."
+        techs={["React", "Redux", "SCSS", "React Router", "CRA", "Typescript"]}
         link="https://playout.krastan.com"
       />
       <ProjectFigure
         image={hitomezashiImg}
         title="Hitomezashi"
-        description="A vanilla html/css/js website where users can create custom hitmezashi stitch patterns"
+        description="A website where users can create custom hitmezashi stitch patterns."
+        techs={["HTML", "CSS", "Typescript", "Canvas"]}
         link="https://hitomezashi.krastan.com"
       />
       <ProjectFigure
         image={websiteExampleImg}
         title={"This Website"}
-        description={`This is my personal website where people can learn about me and
-         my work/projects. It was written with ReactJS, TailwindCSS and Typescript.`}
+        description={`This is my personal website where people can learn about me,
+         my work, and my projects.`}
+        techs={["React", "TailwindCSS", "Typescript", "Vite"]}
         link={"https://github.com/KrastanD/KrastanD.github.io"}
       />
       <ProjectFigure
         image={finesseNationImg}
         title={"Finesse Nation"}
-        description={`An app written in Flutter, Node.js with Express, and MongoDB. Users can make
-              posts about free things on campus. Posts can include a picture,
-              location, and date and can be commented and voted on.`}
+        description={`A mobile app where users can make
+              posts about free food and giveaways on campus. Posts can include a picture,
+              location, date and can even be commented and voted on.`}
+        techs={["Flutter", "Express", "MongoDB"]}
         link={"https://www.github.com/FinesseNation"}
       />
       <ProjectFigure
         image={mementoImg}
         title={"Memento"}
-        description={`An app written in React Native, Node.js with Express, and MongoDB. Users can
-              make posts about what they have done and set the date, time, and
+        description={`An app where users can make posts about what they have done and set the date, time, and
               location.`}
+        techs={[
+          "React Native",
+          "React Navigation",
+          "Expo",
+          "Express",
+          "MongoDB",
+        ]}
         link={"https://www.github.com/KrastanD/Memento"}
       />
       <ProjectFigure
@@ -52,14 +62,15 @@ const Projects = () => {
         description={`An app that displays live lyrics using the Spotify Api to see what
       song the user is currently playing and web scrapes genius.com to
       get the lyrics for it.`}
+        techs={["React Native", "Expo"]}
         link={"https://www.github.com/KrastanD/LyricGenius"}
       />
       <ProjectFigure
         image={githubAppExampleImg}
         title="Github App"
-        description={`An app written in React Native which displays 
-        profile and repo information for users and their following/followers.
-         It makes use of Github's GraphQL API.`}
+        description={`An app which displays 
+        profile and repo information for users and their following/followers using Github's API.`}
+        techs={["React Native", "React Navigation", "GraphQL", "Expo"]}
         link="https://github.com/KrastanD/GitHubApp"
       />
     </div>
