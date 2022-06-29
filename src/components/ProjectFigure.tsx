@@ -1,8 +1,14 @@
+interface PillData {
+  name: string;
+  bgColor: string;
+  textColor: string;
+}
+
 type ProjectFigureProps = {
   image: string;
   title: string;
   description: string;
-  techs: string[];
+  techs: PillData[];
   link?: string;
 };
 
@@ -26,8 +32,10 @@ function ProjectFigure({
       <p className="mt-6">{description}</p>
       <div className="flex flex-row flex-wrap">
         {techs.map((tech) => (
-          <p className="pl-2 pr-2 border border-black rounded-2xl m-1 ml-0 mr-2 text-sm">
-            {tech}
+          <p
+            className={`pl-2 pr-2 ${tech.bgColor} ${tech.textColor} font-semibold  rounded-2xl m-1 ml-0 mr-2 text-sm`}
+          >
+            {tech.name}
           </p>
         ))}
       </div>
@@ -46,7 +54,7 @@ function ProjectFigure({
   };
 
   return (
-    <div className="p-4 bg-white m-6  rounded">
+    <div className="p-4 bg-white m-3 rounded">
       <Card />
     </div>
   );
