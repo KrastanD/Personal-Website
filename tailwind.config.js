@@ -1,4 +1,6 @@
 /** @type {import('tailwindcss').Config} */
+const defaultTheme = require("tailwindcss/defaultTheme");
+
 module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}", "./index.html"],
   media: false, // or 'media' or 'class'
@@ -34,6 +36,10 @@ module.exports = {
         mongoGreen: "#00EC64",
         reactNavigationPurple: "#8C90DF",
         graphQLPurple: "#DF0298",
+      },
+      fontFamily: {
+        sans: ["SourceSansPro", ...defaultTheme.fontFamily.sans],
+        ptsans: ["PTSans", "sans-serif"],
       },
     },
   },
