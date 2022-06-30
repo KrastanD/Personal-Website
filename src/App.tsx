@@ -27,7 +27,7 @@ function App() {
   return (
     <div
       className={`flex flex-col ${
-        md ? "min-h-screen" : "h-screen"
+        md ? "min-h-screen" : "fixed h-full"
       } md:flex-row font-sans`}
     >
       <Division
