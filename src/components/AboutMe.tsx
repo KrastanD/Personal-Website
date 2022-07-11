@@ -16,35 +16,36 @@ const AboutMe = () => {
         <strong>Age: </strong>
         {age} years old <br />
         <br />
-        <strong>Hobbies: </strong>
-        running, reading, longboarding, hiking, coding <br />
-        <br />
         <strong>Resume: </strong>
         <a
           href={resume}
           target="_blank"
           rel="noreferrer"
-          className="hover:text-kdGreen"
+          className="px-3 mx-1 rounded-md border-2 border-black bg-gray-50 hover:bg-gray-100"
         >
           View
         </a>
-        <span> </span>
         <a
           href={resume}
           download="KrastanResume"
-          className="hover:text-kdGreen"
+          className="px-3 rounded-md border-2 border-black bg-gray-50 hover:bg-gray-100"
         >
           Download
         </a>
         <br />
         <br />
-        <strong>Bio: </strong>I am a software engineer and a curious individual
-        by heart. Learning and relearning things is part of the trade and I am
-        lucky to find it enjoyable. Finding bugs and performance improvements in
-        the code drive me. It is like finding a hidden treasure every time.
-        Testing and refactoring are also very important to me, because they make
-        code better and life easier.
+        <strong>Bio: </strong>I am a software engineer and a curious person by
+        heart. Learning and relearning things is part of the trade and I am
+        lucky to find it enjoyable. However, it is making a good product that
+        drives me. Creating a product that users love, find useful, and pleasant
+        to use gives me great satisfaction. I strive to write readable and
+        maintainable code. Clean code allows me to make make bugfixes and
+        improvements to the product days, months, years in the future with
+        minimal time spent trying to read and understand the code.
         <br />
+        <br />
+        <strong>Hobbies: </strong>
+        running, reading, longboarding, hiking, coding <br />
         <br />
         <GitHubButton href="https://github.com/KrastanD">
           Follow @KrastanD
