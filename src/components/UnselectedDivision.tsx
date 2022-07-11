@@ -1,4 +1,4 @@
-import { Divisions } from "../App";
+import { Divisions } from "../types";
 
 const UnselectedDivision = ({ division }: { division: Divisions }) => {
   return (
