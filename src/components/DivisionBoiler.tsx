@@ -1,4 +1,4 @@
-import { Divisions } from "../App";
+import { Divisions } from "../types";
 
 interface DivisionBoilerProps {
   selected: Divisions;
