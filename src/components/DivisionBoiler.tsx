@@ -1,7 +1,7 @@
 import React from "react";
-import { Divisions } from "../App";
 import SelectedDivision from "./SelectedDivision";
 import UnselectedDivision from "./UnselectedDivision";
+import { Divisions } from "../types";
 
 type DivisionBoilerProps = {
   selected: Divisions;
