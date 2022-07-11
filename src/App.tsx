@@ -1,20 +1,13 @@
 import { useState } from "react";
+
 import { Division } from "./components/Division";
 import { DivisionBoiler } from "./components/DivisionBoiler";
-
 import AboutMe from "./components/AboutMe";
 import Education from "./components/Education";
 import Work from "./components/Work";
 import Projects from "./components/Projects";
 import Title from "./components/Title";
-
-export enum Divisions {
-  About_Me = "About Me",
-  Education = "Education",
-  Title = "Krastan Dimitrov",
-  Work = "Work",
-  Projects = "Projects",
-}
+import { Divisions } from "./types";
 
 function App() {
   const [selected, setSelected] = useState(Divisions.Title);

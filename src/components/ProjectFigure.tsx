@@ -1,14 +1,10 @@
-interface PillData {
-  name: string;
-  bgColor: string;
-  textColor: string;
-}
+import { Tech, TechData } from "../utils/techs";
 
 type ProjectFigureProps = {
   image: string;
   title: string;
   description: string;
-  techs: PillData[];
+  techs: Tech[];
   link?: string;
 };
 
@@ -31,13 +27,16 @@ function ProjectFigure({
       </>
       <p className="mt-6">{description}</p>
       <div className="flex flex-row flex-wrap">
-        {techs.map((tech) => (
-          <p
-            className={`pl-2 pr-2 ${tech.bgColor} ${tech.textColor} font-semibold  rounded-2xl m-1 ml-0 mr-2 text-sm`}
-          >
-            {tech.name}
-          </p>
-        ))}
+        {techs.map((tech) => {
+          const techData = TechData[tech];
+          return (
+            <p
+              className={`pl-2 pr-2 ${techData.bgColor} ${techData.textColor} font-semibold  rounded-2xl m-1 ml-0 mr-2 text-sm`}
+            >
+              {techData.name}
+            </p>
+          );
+        })}
       </div>
     </div>
   );
