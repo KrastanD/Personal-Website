@@ -11,7 +11,7 @@ import { Tech } from "../utils/techs";
 
 const Projects = () => {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3">
+    <div className="flex flex-row flex-wrap justify-center">
       <ProjectFigure
         image={playoutImg}
         title="Play Out"
@@ -29,7 +29,9 @@ const Projects = () => {
       <ProjectFigure
         image={hitomezashiImg}
         title="Hitomezashi"
-        description="A website where users can create custom hitomezashi stitch patterns."
+        description="A website where users can create custom hitomezashi stitch patterns. 
+        Includes options to change horizontal and vertical sequences, their colors and the 
+        background color."
         techs={[Tech.HTML, Tech.CSS, Tech.Typescript, Tech.Canvas]}
         link="https://hitomezashi.krastan.com"
       />
