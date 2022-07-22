@@ -32,6 +32,7 @@ function ProjectFigure({
             const techData = TechData[tech];
             return (
               <p
+                key={techData.name}
                 className={`pl-2 pr-2 ${techData.bgColor} ${techData.textColor} font-semibold  rounded-2xl m-1 ml-0 mr-2 text-sm`}
               >
                 {techData.name}
