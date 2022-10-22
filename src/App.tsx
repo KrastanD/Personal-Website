@@ -8,6 +8,7 @@ import Work from "./components/Work";
 import Projects from "./components/Projects";
 import Title from "./components/Title";
 import { Divisions } from "./types";
+import TechsBackground from "./components/TechsBackground";
 
 function App() {
   const [selected, setSelected] = useState(Divisions.Title);
@@ -31,7 +32,7 @@ function App() {
         <DivisionBoiler
           selected={selected}
           division={Divisions.About_Me}
-          bgColor="bg-indigo-100"
+          bgColor="bg-brand1"
         >
           <AboutMe />
         </DivisionBoiler>
@@ -44,7 +45,7 @@ function App() {
         <DivisionBoiler
           selected={selected}
           division={Divisions.Education}
-          bgColor="bg-yellow-100"
+          bgColor="bg-brand2"
         >
           <Education />
         </DivisionBoiler>
@@ -57,10 +58,11 @@ function App() {
         <DivisionBoiler
           selected={selected}
           division={Divisions.Title}
-          bgColor="bg-homeImg"
+          bgColor="bg-brand3"
           noTitle
         >
           <Title />
+          <TechsBackground />
         </DivisionBoiler>
       </Division>
       <Division
@@ -71,7 +73,7 @@ function App() {
         <DivisionBoiler
           selected={selected}
           division={Divisions.Work}
-          bgColor="bg-purple-100"
+          bgColor="bg-brand2"
         >
           <Work />
         </DivisionBoiler>
@@ -84,7 +86,7 @@ function App() {
         <DivisionBoiler
           selected={selected}
           division={Divisions.Projects}
-          bgColor="bg-pink-100"
+          bgColor="bg-brand1"
         >
           <Projects />
         </DivisionBoiler>

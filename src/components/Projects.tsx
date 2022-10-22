@@ -11,7 +11,7 @@ import { Tech } from "../utils/techs";
 
 const Projects = () => {
   return (
-    <div className="flex flex-row flex-wrap justify-center">
+    <div className="flex flex-row flex-wrap justify-center p-6">
       <ProjectFigure
         image={playoutImg}
         title="Play Out"

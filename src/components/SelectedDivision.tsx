@@ -10,10 +10,12 @@ const SelectedDivision = ({
   children: React.ReactNode;
 }) => {
   return (
-    <div className="p-6">
-      {hasTitle && <h1 className={`text-4xl text-center mb-6`}>{division}</h1>}
+    <>
+      {hasTitle && (
+        <h1 className={`text-4xl text-center mb-6 pt-6`}>{division}</h1>
+      )}
       {children}
-    </div>
+    </>
   );
 };
 

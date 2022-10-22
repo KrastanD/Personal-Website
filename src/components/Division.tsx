@@ -13,7 +13,7 @@ const smallWidth = `${
 `;
 const largeWidth = `${
   md ? "w-3/5" : "h-4/5"
-} md:overflow-y-hidden md:h-auto overflow-y-scroll transition-height md:transition-width md:duration-500 duration-500 ease-in-out`;
+} md:overflow-y-hidden md:h-auto overflow-y-scroll overflow-x-hidden transition-height md:transition-width md:duration-500 duration-500 ease-in-out`;
 export const Division = (props: DivisionProps) => {
   const { selected, handleClick, title } = props;
 

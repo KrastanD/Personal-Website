@@ -21,6 +21,11 @@ module.exports = {
         height: "height",
       },
       colors: {
+        brand1: "#CCDAD1",
+        brand2: "#9CAEA9",
+        brand3: "#788585",
+        brand4: "#6F6866",
+        brand5: "#38302E",
         kdGreen: "#67cc8e",
         reactBlue: "#61DAFB",
         reduxPurple: "#764ABC",
@@ -40,6 +45,20 @@ module.exports = {
       fontFamily: {
         sans: ["SourceSansPro", ...defaultTheme.fontFamily.sans],
         ptsans: ["PTSans", "sans-serif"],
+      },
+      animation: {
+        marquee: "marquee 25s linear infinite",
+        marquee2: "marquee2 25s linear infinite",
+      },
+      keyframes: {
+        marquee: {
+          "0%": { transform: "translateX(0%)" },
+          "100%": { transform: "translateX(100%)" },
+        },
+        marquee2: {
+          "0%": { transform: "translateX(-100%)" },
+          "100%": { transform: "translateX(0%)" },
+        },
       },
     },
   },

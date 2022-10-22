@@ -19,7 +19,7 @@ export enum Tech {
   GraphQL,
 }
 
-interface TechDatum {
+export interface TechDatum {
   name: string;
   bgColor: string;
   textColor: string;
