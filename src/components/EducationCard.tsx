@@ -1,12 +1,10 @@
-const EducationCard = ({
-  title,
-  description,
-  image,
-}: {
+type EducationCardProps = {
   title: string;
   description: string;
   image: string;
-}) => {
+};
+
+const EducationCard = ({ title, description, image }: EducationCardProps) => {
   return (
     <div className="flex flex-col lg:flex-row bg-gray-300 m-3 rounded text-black">
       <div className="p-4">
