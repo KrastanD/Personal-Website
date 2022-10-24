@@ -5,17 +5,20 @@
 @font-face {
   font-family: "SourceSansPro";
   src: url("../fonts/SourceSansPro-Regular.ttf");
+  font-display: swap;
 }
 
 @font-face {
   font-family: "SourceSansPro";
   font-weight: bold;
   src: url("../fonts/SourceSansPro-Bold.ttf");
+  font-display: swap;
 }
 
 @font-face {
   font-family: "LobsterTwo-Regular";
   src: url("../fonts/LobsterTwo-Regular.ttf");
+  font-display: swap;
 }
 
 body {
