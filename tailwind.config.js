@@ -10,7 +10,7 @@ module.exports = {
         "1/10": "10%",
       },
       backgroundImage: {
-        homeImg: "url(assets/background_flipped_cropped.webp)",
+        homeImg: "url(assets/sunset.jpg)",
       },
       height: {
         "1/10": "10%",
@@ -40,6 +40,7 @@ module.exports = {
       fontFamily: {
         sans: ["SourceSansPro", ...defaultTheme.fontFamily.sans],
         ptsans: ["PTSans", "sans-serif"],
+        lobster: ["LobsterTwo-Regular"],
       },
     },
   },
