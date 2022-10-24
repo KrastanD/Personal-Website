@@ -1,20 +1,14 @@
 import photoAtUIUC from "../assets/smallerPhotoAtUIUC.jpg";
 import resume from "../assets/Krastanresume-1220.pdf";
-import { milisecondsToYears } from "../utils/utls";
 import GitHubButton from "react-github-btn";
 
 const AboutMe = () => {
-  const bday = new Date("April 9, 1998");
-  const age = milisecondsToYears(new Date().getTime() - bday.getTime());
   return (
     <div className="grid grid-cols-1 xl:grid-cols-2 gap-6 text-gray-300">
       <p>
         <strong>Name: </strong>
         Krastan Dimitrov
         <br />
-        <br />
-        <strong>Age: </strong>
-        {age} years old <br />
         <br />
         <strong>Resume: </strong>
         <a
