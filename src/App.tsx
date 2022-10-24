@@ -31,7 +31,7 @@ function App() {
         <DivisionBoiler
           selected={selected}
           division={Divisions.About_Me}
-          bgColor="bg-indigo-100"
+          bgColor="bg-black"
         >
           <AboutMe />
         </DivisionBoiler>
@@ -44,7 +44,7 @@ function App() {
         <DivisionBoiler
           selected={selected}
           division={Divisions.Education}
-          bgColor="bg-yellow-100"
+          bgColor="bg-[#202D35]"
         >
           <Education />
         </DivisionBoiler>
@@ -71,7 +71,7 @@ function App() {
         <DivisionBoiler
           selected={selected}
           division={Divisions.Work}
-          bgColor="bg-purple-100"
+          bgColor="bg-[#182229]"
         >
           <Work />
         </DivisionBoiler>
@@ -84,7 +84,7 @@ function App() {
         <DivisionBoiler
           selected={selected}
           division={Divisions.Projects}
-          bgColor="bg-pink-100"
+          bgColor="bg-black"
         >
           <Projects />
         </DivisionBoiler>

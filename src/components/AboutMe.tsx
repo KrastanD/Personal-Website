@@ -7,7 +7,7 @@ const AboutMe = () => {
   const bday = new Date("April 9, 1998");
   const age = milisecondsToYears(new Date().getTime() - bday.getTime());
   return (
-    <div className="grid grid-cols-1 xl:grid-cols-2 gap-6">
+    <div className="grid grid-cols-1 xl:grid-cols-2 gap-6 text-gray-300">
       <p>
         <strong>Name: </strong>
         Krastan Dimitrov
@@ -21,14 +21,14 @@ const AboutMe = () => {
           href={resume}
           target="_blank"
           rel="noreferrer"
-          className="px-3 mx-1 rounded-md border-2 border-black bg-gray-50 hover:bg-gray-100"
+          className="px-3 mx-1 rounded-md border-2 border-black bg-gray-50 hover:bg-gray-100 text-black"
         >
           View
         </a>
         <a
           href={resume}
           download="KrastanResume"
-          className="px-3 rounded-md border-2 border-black bg-gray-50 hover:bg-gray-100"
+          className="px-3 rounded-md border-2 border-black bg-gray-50 hover:bg-gray-100 text-black"
         >
           Download
         </a>

@@ -16,7 +16,7 @@ export const DivisionBoiler = (props: DivisionBoilerProps) => {
   const hasTitle = !noTitle;
 
   return (
-    <div className={`min-h-full mx-auto ${bgColor}`}>
+    <div className={`min-h-full mx-auto bg-cover bg-center ${bgColor}`}>
       {isSelected ? (
         <SelectedDivision hasTitle={hasTitle} division={division}>
           {children}

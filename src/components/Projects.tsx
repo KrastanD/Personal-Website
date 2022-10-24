@@ -3,7 +3,7 @@ import ProjectFigure from "./ProjectFigure";
 import finesseNationImg from "../assets/FinesseNationExample2.jpg";
 import mementoImg from "../assets/MementoExample.jpg";
 import lyricGeniusImg from "../assets/LyricGeniusExample.jpg";
-import websiteExampleImg from "../assets/websiteExample.png";
+import websiteExampleImg from "../assets/website-102322.png";
 import githubAppExampleImg from "../assets/GithubAppExample.jpg";
 import playoutImg from "../assets/PlayOut.png";
 import hitomezashiImg from "../assets/Hitomezashi.png";
