@@ -9,7 +9,7 @@ interface DivisionProps {
 const md = window.screen.width >= 768;
 const smallWidth = `${
   md ? "w-1/10" : "h-1/20"
-} transition-height md:transition-width md:duration-500 ease-in-out duration-500
+} transition-height md:transition-width md:duration-500 ease-in-out duration-500 cursor-pointer
 `;
 const largeWidth = `${
   md ? "w-3/5" : "h-4/5"
