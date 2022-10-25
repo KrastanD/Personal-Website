@@ -1,5 +1,5 @@
 import WorkCard, { WorkListItem } from "./WorkCard";
-import resume from "../assets/Krastanresume-1220.pdf";
+import resume from "../assets/Krastan-resume-1022-v1.pdf";
 
 const Work = () => {
   return (
@@ -19,7 +19,7 @@ const Work = () => {
           </a>
           <a
             href={resume}
-            download="KrastanResume"
+            download="KrastanDimitrovResume"
             className="px-3 py-2 mx-1 my-1 rounded-md border-1 shadow-md bg-gray-50 hover:bg-gray-100 text-black text-center"
           >
             Download Resume
