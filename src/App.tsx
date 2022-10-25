@@ -20,7 +20,7 @@ function App() {
   return (
     <div
       className={`flex flex-col ${
-        md ? "min-h-screen" : "fixed h-full"
+        md ? "min-h-screen" : "fixed h-full w-full"
       } md:flex-row font-sans`}
     >
       <Division
