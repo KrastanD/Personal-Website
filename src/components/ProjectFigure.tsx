@@ -18,7 +18,7 @@ function ProjectFigure({
   const InnerCard = () => (
     <div className="flex flex-col justify-between">
       <div>
-        <h3 className="font-semibold mb-2">{title}</h3>
+        <h3 className="font-semibold mb-2 text-center text-xl">{title}</h3>
         <img
           src={image}
           alt={`Screenshot of ${title}`}
