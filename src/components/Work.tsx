@@ -4,7 +4,7 @@ import resume from "../assets/Krastan-resume-1022-v1.pdf";
 const Work = () => {
   return (
     <div className="flex flex-col items-stretch">
-      <div className="bg-gray-300 m-3 p-4 rounded text-black flex flex-col max-w-screen-xl w-full self-center items-center">
+      <div className="bg-gray-300 p-4 rounded text-black flex flex-col max-w-screen-xl w-full self-center items-center">
         <h2 className="text-2xl font-bold text-center mb-2 ">
           Want to be next?
         </h2>

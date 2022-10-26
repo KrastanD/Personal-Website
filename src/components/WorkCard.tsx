@@ -7,7 +7,7 @@ type WorkCardProps = {
 
 const WorkCard = ({ title, years, position, children }: WorkCardProps) => {
   return (
-    <div className="flex flex-col lg:flex-row bg-gray-300 my-3 rounded text-black max-w-screen-xl">
+    <div className="flex flex-col lg:flex-row bg-gray-300 my-3 rounded text-black max-w-screen-xl w-full">
       <div className="p-4">
         <div className="mb-2">
           <p className="text-center text-2xl font-bold">
