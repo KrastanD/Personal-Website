@@ -21,10 +21,10 @@ const WorkCard = ({ title, years, position, children }: WorkCardProps) => {
   );
 };
 
-export const WorkListItem = ({ text }: { text: string }) => {
+export const WorkListItem = ({ children }: { children: string }) => {
   return (
     <p>
-      <strong>•</strong> {text}
+      <strong>•</strong> {children}
     </p>
   );
 };
