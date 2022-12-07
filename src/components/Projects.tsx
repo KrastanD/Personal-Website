@@ -12,11 +12,11 @@ import { Tech } from "../utils/techs";
 
 const Projects = () => {
   return (
-    <div className="flex flex-row flex-wrap justify-center">
+    <div className="flex flex-`row flex-wrap justify-center">
       <ProjectFigure
         image={dockerGoImg}
         title="Continuous Release Radar"
-        description="A containerized go service that copies the Release Radar on Spotify into a long term playlist. It uses a cron job to trigger itself every week and uses ntfy.sh to send a notification to the user's phone if they need to approve the app with OAuth2."
+        description="A containerized Go service that copies the Release Radar on Spotify into a long term playlist. It uses a cron job to trigger itself every week and sends a push notification to the user's phone to approve the app with OAuth2 when needed."
         techs={[Tech.Go, Tech.Docker, Tech.OAuth2]}
       />
       <ProjectFigure
