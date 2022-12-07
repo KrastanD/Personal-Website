@@ -9,7 +9,7 @@ interface DivisionProps {
 const md = window.screen.width >= 768;
 const smallWidth = `${
   md ? "w-1/10" : "h-1/20"
-} transition-height md:transition-width md:duration-500 ease-in-out duration-500 cursor-pointer
+} transition-height md:transition-width md:duration-500 ease-in-out duration-500
 `;
 const largeWidth = `${
   md ? "w-3/5" : "h-4/5"
@@ -21,6 +21,9 @@ export const Division = (props: DivisionProps) => {
     <div
       className={selected === title ? largeWidth : smallWidth}
       onClick={() => handleClick(title)}
+      role="button"
+      tabIndex={0}
+      onKeyDown={() => handleClick(title)}
     >
       {props.children}
     </div>
