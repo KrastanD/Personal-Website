@@ -18,6 +18,7 @@ const Projects = () => {
         title="Continuous Release Radar"
         description="A containerized Go service that copies the Release Radar on Spotify into a long term playlist. It uses a cron job to trigger itself every week and sends a push notification to the user's phone to approve the app with OAuth2 when needed."
         techs={[Tech.Go, Tech.Docker, Tech.OAuth2]}
+        link="https://github.com/krastand/continuous-release-radar"
       />
       <ProjectFigure
         image={playoutImg}

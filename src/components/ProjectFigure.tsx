@@ -22,7 +22,9 @@ function ProjectFigure({
         <img
           src={image}
           alt={`Screenshot of ${title}`}
-          className="object-cover object-top w-full h-64 border-gray-300 border-2 rounded hover:scale-105 ease-in-out duration-200"
+          className={`object-cover object-top w-full h-64 border-gray-300 ${
+            link && "border-2 rounded hover:scale-105 ease-in-out duration-200"
+          }`}
         />
         <p className="my-2">{description}</p>
       </div>
