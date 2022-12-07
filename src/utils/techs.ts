@@ -17,6 +17,9 @@ export enum Tech {
   ReactNavigation,
   Expo,
   GraphQL,
+  Docker,
+  Go,
+  OAuth2,
 }
 
 interface TechDatum {
@@ -25,7 +28,7 @@ interface TechDatum {
   textColor: string;
 }
 
-export const TechData: { [key in Tech]: TechDatum } = {
+export const TechData: Record<Tech, TechDatum> = {
   [Tech.React]: {
     name: "React",
     bgColor: "bg-black",
@@ -102,6 +105,21 @@ export const TechData: { [key in Tech]: TechDatum } = {
   [Tech.GraphQL]: {
     name: "GraphQL",
     bgColor: "bg-graphQLPurple",
+    textColor: "text-white",
+  },
+  [Tech.Docker]: {
+    name: "Docker",
+    bgColor: "bg-dockerBlue",
+    textColor: "text-white",
+  },
+  [Tech.Go]: {
+    name: "Go",
+    bgColor: "bg-goBlue",
+    textColor: "text-white",
+  },
+  [Tech.OAuth2]: {
+    name: "OAuth2",
+    bgColor: "bg-black",
     textColor: "text-white",
   },
 };

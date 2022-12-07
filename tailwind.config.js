@@ -36,6 +36,8 @@ module.exports = {
         mongoGreen: "#00EC64",
         reactNavigationPurple: "#8C90DF",
         graphQLPurple: "#DF0298",
+        dockerBlue: "#0073EC",
+        goBlue: "#027D9C",
       },
       fontFamily: {
         sans: ["SourceSansPro", ...defaultTheme.fontFamily.sans],

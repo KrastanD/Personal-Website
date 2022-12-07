@@ -7,11 +7,18 @@ import websiteExampleImg from "../assets/website-102322.png";
 import githubAppExampleImg from "../assets/GithubAppExample.jpg";
 import playoutImg from "../assets/PlayOut.png";
 import hitomezashiImg from "../assets/Hitomezashi.png";
+import dockerGoImg from "../assets/dockergo.webp";
 import { Tech } from "../utils/techs";
 
 const Projects = () => {
   return (
-    <div className="flex flex-row flex-wrap justify-center">
+    <div className="flex flex-`row flex-wrap justify-center">
+      <ProjectFigure
+        image={dockerGoImg}
+        title="Continuous Release Radar"
+        description="A containerized Go service that copies the Release Radar on Spotify into a long term playlist. It uses a cron job to trigger itself every week and sends a push notification to the user's phone to approve the app with OAuth2 when needed."
+        techs={[Tech.Go, Tech.Docker, Tech.OAuth2]}
+      />
       <ProjectFigure
         image={playoutImg}
         title="Play Out"
@@ -44,6 +51,15 @@ const Projects = () => {
         link={"https://github.com/KrastanD/KrastanD.github.io"}
       />
       <ProjectFigure
+        image={lyricGeniusImg}
+        title={"Lyric Genius"}
+        description={`An app which displays live lyrics using the Spotify Api to see what
+      song the user is currently playing and web scrapes genius.com to
+      get the lyrics for it.`}
+        techs={[Tech.ReactNative, Tech.Expo, Tech.OAuth2]}
+        link={"https://www.github.com/KrastanD/LyricGenius"}
+      />
+      <ProjectFigure
         image={finesseNationImg}
         title={"Finesse Nation"}
         description={`A mobile app where users can make
@@ -65,15 +81,6 @@ const Projects = () => {
           Tech.MongoDB,
         ]}
         link={"https://www.github.com/KrastanD/Memento"}
-      />
-      <ProjectFigure
-        image={lyricGeniusImg}
-        title={"Lyric Genius"}
-        description={`An app which displays live lyrics using the Spotify Api to see what
-      song the user is currently playing and web scrapes genius.com to
-      get the lyrics for it.`}
-        techs={[Tech.ReactNative, Tech.Expo]}
-        link={"https://www.github.com/KrastanD/LyricGenius"}
       />
       <ProjectFigure
         image={githubAppExampleImg}
