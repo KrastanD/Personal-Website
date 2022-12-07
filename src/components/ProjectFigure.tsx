@@ -47,7 +47,13 @@ function ProjectFigure({
   const Card = () => {
     if (link) {
       return (
-        <a href={link} target="_blank" className="flex h-full" rel="noreferrer">
+        <a
+          href={link}
+          target="_blank"
+          className="flex h-full"
+          rel="noreferrer"
+          tabIndex={0}
+        >
           <InnerCard />
         </a>
       );

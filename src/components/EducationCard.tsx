@@ -14,7 +14,7 @@ const EducationCard = ({ title, description, image }: EducationCardProps) => {
       <img
         className="w-full lg:w-64 xl:w-80 rounded-tr rounded-br object-cover"
         src={image}
-        alt="School image"
+        alt="School"
       />
     </div>
   );
