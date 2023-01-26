@@ -4,8 +4,8 @@ import resume from "../assets/Krastan-resume-10-27-22.pdf";
 const Work = () => {
   return (
     <div className="flex flex-col items-stretch">
-      <div className="bg-gray-300 p-4 rounded text-black flex flex-col max-w-screen-xl w-full self-center items-center">
-        <h2 className="text-2xl font-bold text-center mb-2 ">
+      <div className="bg-gray-300 p-4 mb-3 rounded text-black flex flex-col w-full items-center">
+        <h2 className="text-2xl font-bold text-center mb-2">
           Want to be next?
         </h2>
         <div className="flex flex-col sm:flex-row">
@@ -27,6 +27,11 @@ const Work = () => {
         </div>
       </div>
       <div className="flex flex-col items-center">
+        <WorkCard
+          title="SpotOn"
+          years="January 2023 - Current"
+          position="Senior Software Engineer"
+        />
         <WorkCard
           title="FuboTV"
           years="March 2021 - November 2022"
