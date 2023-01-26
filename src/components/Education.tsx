@@ -9,7 +9,7 @@ const Education = () => {
       <EducationCard
         title="University of Illinois at Urbana-Champaign"
         image={uiuc}
-        description="My alma mater. Of the 61 credits hours I took, 52 were computer science
+        description="My alma mater. Of the 61 credit hours I took, 52 were computer science
         courses. I earned my degree in only two years with the help of my
         college and AP credits. I enjoyed my time there thoroughly and learned
         so much from the brilliant professors and peers. My focus was on Big
