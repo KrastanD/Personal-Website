@@ -8,50 +8,38 @@ on:
 
   workflow_dispatch:
 
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
 jobs:
-  deploy:
+  build:
     runs-on: ubuntu-latest
-
-    strategy:
-      matrix:
-        node-version: [16.x]
-        # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
-
     steps:
       - name: Checkout master branch
         uses: actions/checkout@v2
-        with:
-          ref: master
 
       - name: Set up npm
         uses: actions/setup-node@v2
-        with:
-          node-version: ${{ matrix.node-version }}
-          cache: "npm"
 
       - name: Install dependencies
         run: npm install
-        
+
       - name: Build app
         run: npm run build
 
-      - name: Deploy with gh-pages
-        run: |
-          git remote set-url origin https://git:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git
-          npm run deploy -- -u "github-actions-bot <support+actions@github.com>"
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
-      - name: Checkout gh-pages branch
-        uses: actions/checkout@v2
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v1
         with:
-          ref: gh-pages
+          path: ./dist
 
-      - name: Add CNAME
-        run: |
-          echo "www.krastan.com" > CNAME
-          git config user.name github-actions-bot
-          git config user.email support+actions@github.com
-          git add CNAME
-          git commit -m "Add CNAME"
-          git push
+  deploy:
+    needs: build
+    environment:
+      name: github-pages
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v1
