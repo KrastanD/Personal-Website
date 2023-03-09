@@ -7,7 +7,7 @@ type WorkCardProps = {
 
 const WorkCard = ({ title, years, position, children }: WorkCardProps) => {
   return (
-    <div className="flex flex-col lg:flex-row bg-gray-300 my-3 rounded text-black w-full self-center items-center">
+    <div className="flex flex-col lg:flex-row bg-darkGunmetal-600 my-3 rounded text-darkGunmetal-100 w-full self-center items-center">
       <div className="p-4 w-full">
         <div className="mb-2">
           <p className="text-center text-2xl font-bold">
@@ -23,7 +23,7 @@ const WorkCard = ({ title, years, position, children }: WorkCardProps) => {
 
 export const WorkListItem = ({ children }: { children: string }) => {
   return (
-    <p>
+    <p className="pb-1">
       <strong>•</strong> {children}
     </p>
   );

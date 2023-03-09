@@ -39,6 +39,14 @@ module.exports = {
         graphQLPurple: "#DF0298",
         dockerBlue: "#0073EC",
         goBlue: "#027D9C",
+        charlestonGreen: "#202D35",
+        darkGunmetal: {
+          800: "#000C15",
+          700: "#182229",
+          600: "#2D373F",
+          100: "#DFECF5",
+        },
+        linkedInBlue: "#0077B5",
       },
       fontFamily: {
         sans: ["SourceSansPro", ...defaultTheme.fontFamily.sans],
