@@ -1,6 +1,6 @@
 const AboutMeCard = ({ text }: { text: string }) => {
   return (
-    <div className="bg-gray-300 p-4 rounded text-black mb-2">
+    <div className="bg-charlestonGreen-700 p-4 rounded text-charlestonGreen-200 mb-2">
       <p>
         {">"} {text}
       </p>

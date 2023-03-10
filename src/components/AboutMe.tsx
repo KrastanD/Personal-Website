@@ -34,7 +34,10 @@ const AboutMe = () => {
         I always have something to do."
         />
         <div className="flex flex-row justify-between">
-          <GitHubButton href="https://github.com/KrastanD">
+          <GitHubButton
+            data-color-scheme="dark"
+            href="https://github.com/KrastanD"
+          >
             Follow @KrastanD
           </GitHubButton>
           <LinkedInButton href="https://linkedin.com/in/krastan-dimitrov">
