@@ -16,13 +16,13 @@ function ProjectFigure({
   link,
 }: ProjectFigureProps) {
   const InnerCard = () => (
-    <div className="flex flex-col justify-between">
+    <div className="flex flex-col justify-between text-darkGunmetal-200">
       <div>
         <h3 className="font-semibold mb-2 text-center text-xl">{title}</h3>
         <img
           src={image}
           alt={`Screenshot of ${title}`}
-          className={`object-cover object-top w-full h-64 border-gray-300 ${
+          className={`object-cover object-top w-full h-64 border-darkGunmetal-700 ${
             link && "border-2 rounded hover:scale-105 ease-in-out duration-200"
           }`}
         />
@@ -64,7 +64,7 @@ function ProjectFigure({
   };
 
   return (
-    <div className="w-80 p-4 bg-gray-300 m-3 rounded">
+    <div className="w-80 p-4 bg-darkGunmetal-700 m-3 rounded">
       <Card />
     </div>
   );

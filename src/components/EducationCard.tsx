@@ -6,7 +6,7 @@ type EducationCardProps = {
 
 const EducationCard = ({ title, description, image }: EducationCardProps) => {
   return (
-    <div className="flex flex-col lg:flex-row bg-gray-300 my-3 rounded text-black max-w-screen-xl">
+    <div className="flex flex-col lg:flex-row bg-charlestonGreen-600 my-3 rounded text-charlestonGreen-200 max-w-screen-xl">
       <div className="p-4">
         <p className="text-center text-2xl font-bold mb-3">{title}</p>
         <p>{description}</p>
