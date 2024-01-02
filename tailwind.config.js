@@ -1,8 +1,8 @@
 /* eslint-disable @typescript-eslint/no-var-requires */
 /** @type {import('tailwindcss').Config} */
-const defaultTheme = require("tailwindcss/defaultTheme");
+import defaultTheme from "tailwindcss/defaultTheme";
 
-module.exports = {
+const config = {
   content: ["./src/**/*.{js,jsx,ts,tsx}", "./index.html"],
   media: false, // or 'media' or 'class'
   theme: {
@@ -69,3 +69,5 @@ module.exports = {
   },
   plugins: [],
 };
+
+export default config;
