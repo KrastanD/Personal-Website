@@ -20,13 +20,16 @@ export const Division = ({
   title,
   children,
 }: DivisionProps) => {
+  if (selected === title) {
+    return <div className={largeWidth}>{children}</div>;
+  }
   return (
     <div
-      className={selected === title ? largeWidth : smallWidth}
+      className={smallWidth}
       onClick={() => handleClick(title)}
       role="button"
-      tabIndex={0}
       onKeyDown={() => handleClick(title)}
+      tabIndex={0}
     >
       {children}
     </div>
