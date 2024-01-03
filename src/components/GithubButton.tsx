@@ -1,5 +1,5 @@
 import React from "react";
-import github from "../assets/GitHub-Logo.png";
+import github from "../assets/Github-Logo.png";
 
 const GithubButton = ({
   href,
