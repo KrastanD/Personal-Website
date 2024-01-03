@@ -1,4 +1,4 @@
-import { Divisions } from "../types";
+import { DivisionName } from "../types";
 
 const SelectedDivision = ({
   hasTitle,
@@ -6,7 +6,7 @@ const SelectedDivision = ({
   children,
 }: {
   hasTitle: boolean;
-  division: Divisions;
+  division: DivisionName;
   children: React.ReactNode;
 }) => {
   return (

@@ -1,14 +1,14 @@
 import React from "react";
 import SelectedDivision from "./SelectedDivision";
 import UnselectedDivision from "./UnselectedDivision";
-import { Divisions } from "../types";
+import { DivisionName } from "../types";
 
 type DivisionBoilerProps = {
-  selected: Divisions;
-  division: Divisions;
+  selected: DivisionName;
+  division: DivisionName;
   bgColor: string;
   noTitle?: boolean;
-  children?: React.ReactNode | React.ReactNode[];
+  children?: React.ReactNode;
 };
 export const DivisionBoiler = (props: DivisionBoilerProps) => {
   const { selected, division, bgColor, noTitle, children } = props;
