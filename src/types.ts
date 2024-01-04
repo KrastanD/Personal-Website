@@ -1,4 +1,4 @@
-export enum Divisions {
+export enum DivisionName {
   About_Me = "About Me",
   Education = "Education",
   Title = "Krastan Dimitrov",

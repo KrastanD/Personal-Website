@@ -1,10 +1,10 @@
-import { Divisions } from "../types";
+import { DivisionName } from "../types";
 
 interface DivisionProps {
   children: React.ReactNode | React.ReactNode[];
   selected: string;
-  title: Divisions;
-  handleClick: (divisionName: Divisions) => void;
+  title: DivisionName;
+  handleClick: (divisionName: DivisionName) => void;
 }
 const md = window.screen.width >= 768;
 const smallWidth = `${
@@ -14,18 +14,24 @@ const smallWidth = `${
 const largeWidth = `${
   md ? "w-3/5" : "h-4/5"
 } md:overflow-y-hidden md:h-auto overflow-y-scroll transition-height md:transition-width md:duration-500 duration-500 ease-in-out`;
-export const Division = (props: DivisionProps) => {
-  const { selected, handleClick, title } = props;
-
+export const Division = ({
+  selected,
+  handleClick,
+  title,
+  children,
+}: DivisionProps) => {
+  if (selected === title) {
+    return <div className={largeWidth}>{children}</div>;
+  }
   return (
     <div
-      className={selected === title ? largeWidth : smallWidth}
+      className={smallWidth}
       onClick={() => handleClick(title)}
       role="button"
-      tabIndex={0}
       onKeyDown={() => handleClick(title)}
+      tabIndex={0}
     >
-      {props.children}
+      {children}
     </div>
   );
 };

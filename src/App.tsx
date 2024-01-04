@@ -7,12 +7,12 @@ import Education from "./components/Education";
 import Work from "./components/Work";
 import Projects from "./components/Projects";
 import Title from "./components/Title";
-import { Divisions } from "./types";
+import { DivisionName } from "./types";
 
 function App() {
-  const [selected, setSelected] = useState(Divisions.Title);
+  const [selected, setSelected] = useState(DivisionName.Title);
 
-  const handleClick = (divisionName: Divisions) => {
+  const handleClick = (divisionName: DivisionName) => {
     setSelected(divisionName);
   };
   const md = window.screen.width >= 768;
@@ -24,39 +24,39 @@ function App() {
       } md:flex-row font-sans`}
     >
       <Division
-        title={Divisions.About_Me}
+        title={DivisionName.About_Me}
         selected={selected}
         handleClick={handleClick}
       >
         <DivisionBoiler
           selected={selected}
-          division={Divisions.About_Me}
+          division={DivisionName.About_Me}
           bgColor="bg-black"
         >
           <AboutMe />
         </DivisionBoiler>
       </Division>
       <Division
-        title={Divisions.Education}
+        title={DivisionName.Education}
         selected={selected}
         handleClick={handleClick}
       >
         <DivisionBoiler
           selected={selected}
-          division={Divisions.Education}
+          division={DivisionName.Education}
           bgColor="bg-charlestonGreen-700"
         >
           <Education />
         </DivisionBoiler>
       </Division>
       <Division
-        title={Divisions.Title}
+        title={DivisionName.Title}
         selected={selected}
         handleClick={handleClick}
       >
         <DivisionBoiler
           selected={selected}
-          division={Divisions.Title}
+          division={DivisionName.Title}
           bgColor="bg-homeImg"
           noTitle
         >
@@ -64,26 +64,26 @@ function App() {
         </DivisionBoiler>
       </Division>
       <Division
-        title={Divisions.Work}
+        title={DivisionName.Work}
         selected={selected}
         handleClick={handleClick}
       >
         <DivisionBoiler
           selected={selected}
-          division={Divisions.Work}
+          division={DivisionName.Work}
           bgColor="bg-darkGunmetal-700"
         >
           <Work />
         </DivisionBoiler>
       </Division>
       <Division
-        title={Divisions.Projects}
+        title={DivisionName.Projects}
         selected={selected}
         handleClick={handleClick}
       >
         <DivisionBoiler
           selected={selected}
-          division={Divisions.Projects}
+          division={DivisionName.Projects}
           bgColor="bg-black"
         >
           <Projects />
