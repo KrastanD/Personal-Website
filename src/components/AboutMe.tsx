@@ -1,7 +1,7 @@
 import photoAtUIUC from "../assets/smallerPhotoAtUIUC.jpg";
-import GitHubButton from "react-github-btn";
-import LinkedInButton from "./LinkedInButton";
 import AboutMeCard from "./AboutMeCard";
+import GithubButton from "./GithubButton";
+import LinkedInButton from "./LinkedInButton";
 
 const AboutMe = () => {
   return (
@@ -34,12 +34,9 @@ const AboutMe = () => {
         I always have something to do."
         />
         <div className="flex flex-row justify-between">
-          <GitHubButton
-            data-color-scheme="dark"
-            href="https://github.com/KrastanD"
-          >
+          <GithubButton href="https://github.com/KrastanD">
             Follow @KrastanD
-          </GitHubButton>
+          </GithubButton>
           <LinkedInButton href="https://linkedin.com/in/krastan-dimitrov">
             Connect with LinkedIn
           </LinkedInButton>

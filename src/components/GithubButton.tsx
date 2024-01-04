@@ -1,7 +1,7 @@
 import React from "react";
-import linkedin from "../assets/LI-In-Bug.png";
+import github from "../assets/Github-Logo.png";
 
-const LinkedInButton = ({
+const GithubButton = ({
   href,
   children,
 }: {
@@ -11,11 +11,11 @@ const LinkedInButton = ({
   return (
     <a href={href} target="_blank" rel="noreferrer">
       <div className="flex flex-row bg-[#1d2226] text-[#E9E9EA] text-[11px] font-semibold h-fit px-[5px] py-[2px] rounded-sm">
-        <img src={linkedin} className="h-4 mr-0.5" alt="Linkedin logo" />
+        <img src={github} className="h-4 mr-1" alt="Github logo" />
         <p>{children}</p>
       </div>
     </a>
   );
 };
 
-export default LinkedInButton;
+export default GithubButton;
