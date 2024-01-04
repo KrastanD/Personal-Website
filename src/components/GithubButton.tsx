@@ -10,7 +10,7 @@ const GithubButton = ({
 }) => {
   return (
     <a href={href} target="_blank" rel="noreferrer">
-      <div className="flex flex-row bg-[#1d2226] text-[#E9E9EA] text-[11px] font-semibold h-fit px-[5px] py-[2px] rounded-sm">
+      <div className="flex flex-row bg-[#1d2226] text-[#E9E9EA] text-[11px] font-semibold h-fit px-[5px] py-[2px] rounded-sm hover:scale-105">
         <img src={github} className="h-4 mr-1" alt="Github logo" />
         <p>{children}</p>
       </div>
